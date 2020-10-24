@@ -1,0 +1,308 @@
+/*==================================LISTAS NUMERADAS==================================*/
+ol.circles-list {
+    margin-left: -15px;
+}
+ol.circles-list li {
+    margin-top: 5px;
+    list-style-image: none;
+}
+ol.circles-list {}
+ol.circles-list > li {
+    position: relative;
+    margin-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 8px;
+    text-align: justify;
+    list-style-image: none;
+    *zoom: 1;
+}
+ol.circles-list > li:before {
+    background: url(../images/list/bg-circle.png) no-repeat -.15em .02em;
+    color: #f5f5f5;
+    content: counter(li-counter) "";
+    counter-increment: li-counter;
+    font-family: "Lato", Arial, cursive, sans-serif;
+    font-size: 1.05em;
+    height: 1.7em;
+    left: -1.8em;
+    line-height: 1.5em;
+    position: absolute;
+    top: .2em;
+    text-align: center;
+    width: 1.7em;
+}
+ol.list-alpha {
+    color: #666;
+}
+ol.list-alpha > li {
+    position: relative;
+    margin-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 8px;
+    text-align: justify;
+    list-style-image: none;
+}
+ol.list-alpha > li:before {
+    background: url(../images/list/bg-circle.png) no-repeat -.15em .02em;
+    color: #f5f5f5;
+    content: counter(li-counter, lower-alpha) "";
+    counter-increment: li-counter;
+    font-family: 'Lato', Arial, cursive, sans-serif;
+    font-size: 1.05em;
+    height: 1.7em;
+    left: -1.8em;
+    line-height: 1.5em;
+    position: absolute;
+    top: .2em;
+    text-align: center;
+    width: 1.7em;
+}
+#alpha > li {
+    list-style: lower-alpha;
+    position: relative;
+    margin-bottom: 6px;
+    text-align: justify;
+    list-style-image: none;
+}
+#alpha > li:before {
+    position: absolute;
+    top: -1px;
+    left: -1.8em;
+    width: 1.7em;
+    height: 1.7em;
+    line-height: 1.7em;
+    font-size: 1em;
+    text-align: center;
+    color: #f5f5f5;
+    font-weight: bold;
+    background: #fff;
+    content: counter(li-counter, lower-alpha) ".";
+    counter-increment: li-counter;
+}
+#alpha > li:before {
+    color: #5bc500;
+}
+#alpha > li {
+    *zoom: 1;
+}
+ol.green {
+    background: transparent!important;
+    color: #666!important;
+}
+ol.circles-list p {
+    color: #666;
+    font-weight: normal;
+    font-size: 1em;
+}
+/*==================================LISTAS VIÑETAS==================================*/
+ul.pin-list {
+    list-style-image: url(../images/list/pinamarillo.png);
+    margin-top: .8em;
+    text-align: justify
+}
+.Bull li {
+    list-style-image: url(../images/list/bien.png);
+    margin-top: .
+}
+.llamar2 .Bull li,.llamar4 .Bull li, .llamar .Bull li, .llamarContenido .Bull li, .section .Bull li {
+    list-style-image: url(../images/list/bien.png);
+    margin-top: .4em
+}
+.llamar4 .Pin li, .llamar .Pin li, .llamarContenido .Pin li, .section .Pin li {
+    list-style-image: url(../images/list/pin.png);
+    margin-top: 10px
+}
+.llamar4 .PinG li, .llamar .PinG li, .llamarContenido .PinG li, .section .PinG li {
+    list-style-image: url(../images/list/pinrojo.png);
+    margin-top: .4em;
+    text-align: justify
+}
+.llamar4 ul li, .llamar2 ul li, .llamar ul li, .llamarContenido ul li, .section ul li {
+    list-style-image: url(../images/list/pinrojo.png);
+    margin-top: .4em;
+    text-align: justify
+}
+.section .pale-yellow ul li {
+    list-style-image: url(../images/list/pinamarillo.png)!important;
+    margin-top: .8em;
+    text-align: justify
+}
+
+/*==================================LISTA SNAKE==================================*/
+p.list-snake {
+    border-top: 2px dashed;
+    border-color: #c8aa64 !important;
+    margin:0; padding: 30px;
+    counter-increment: section;
+    position: relative;
+}
+
+p.list-snake:nth-child(even):before {
+    content: counter(section);
+    right: 100%; 
+    margin-right: -15px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: #c8aa64;
+    text-align:center;
+    color: #49423a;
+    /* font-size: 110%; */
+    font-weight: bold;
+}
+
+p.list-snake:nth-child(odd):before {
+    content: counter(section);
+    left: 100%; 
+    margin-left: -15px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px 5px 5px 12px;
+    height: 30px;
+    width: 30px;
+    background-color: #c8aa64;
+    text-align:center;
+    color: #49423a;
+    /* font-size: 110%; */
+    font-weight: bold;
+    text-align: justify;
+}
+
+p.list-snake:nth-child(even) {
+    border-left: 2px dashed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px; 
+    padding-right: 0;
+}
+
+p.list-snake:nth-child(odd) {
+    border-right: 2px dashed;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px; 
+    padding-left: 0;
+}
+
+p.list-snake:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+
+p.list-snake:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}
+
+/*==================================LISTA AWS CIRCLE==================================*/
+ol.list-aws-circle {
+    max-width: 350px;
+    counter-reset: list-aws-circle;
+    list-style: none;
+    padding-left: 40px;
+}
+ol.list-aws-circle li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: list-aws-circle;
+    position: relative;
+}
+ol.list-aws-circle li::before {
+    content: counter(list-aws-circle);
+    color: #fcd000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    transform: rotate(-10deg);
+    background: black;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 0 #999;
+}
+
+/*==================================LISTA BIG NUMBER==================================*/
+ol {
+    list-style: none;
+    counter-reset: list-big-number;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+ol li {
+    counter-increment: list-big-number;
+    display: flex;
+    width: 50%;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+ol li::before {
+    content: "0" counter(list-big-number);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    font-family: 'Abril Fatface', serif;
+    line-height: 1;
+}
+
+/*==================================LISTA STEPS==================================*/
+ol.steps {
+    clear: both;
+    list-style: none;
+    padding-left: 2%;
+}
+ol.steps li {
+    margin: 2em 0;
+    padding-top: 1em;
+    display: block;
+    position: relative;
+    counter-increment: inst;
+}
+ol.steps li::before {
+    content: counter(inst);
+    
+    background: rgba(255, 150, 0, 0.35);
+    color: #fff;
+    
+    font-size: 1em;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 1px 1px rgba(255, 150, 0, 0.5);
+    
+    border-radius: 0 0.675em 0.675em 0;
+    font-size: 1.5em;
+    text-align: center;
+    
+    padding-top: 0;
+    padding-left: 2.25%;
+    left: -5%;
+    top: -0.65em;
+    height: 1.35em;
+    width: 1.35em;
+    position: absolute;
+    
+    transition: all 0.2s ease-in-out;
+    
+    z-index: -1;
+}
+@media (min-width: 33em) {
+    ol.steps li:before {
+        border-radius: 50%;
+        font-size: 1.5em;
+        height: 1.35em;
+        margin-left: 2.5%;
+        padding-left: 0;
+        padding-top: 0;
+        top: -0.15em;
+        width: 1.35em;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <!-- End Metadata -->
+    <!-- Link -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/portada.min.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+    <link rel="shortcut icon" type="image/icon" href="images/favicon.ico"/><!-- Favicon-->
+    <!-- End Link -->
+    <title>SFC CONSULTORES EN SALUD SAS</title>
+</head>
+<body>
+    <div class="contenido">
+        <div class="jumbotron text-center" id="index_jumbotron" style="border-radius: 0;">
+            <img src="images/portada.jpg" alt="Portada">
+        </div>
+        <nav class="navbar navbar-expand-lg bg-sfc-tierra justify-content-center" id="navbar_title">
+            <h6 class="text-sfc-cafe justify-content-center text-center font-weight-bold m-0" id="title_page">LLEVE SU EMPRESA (IPS) AL SIGUIENTE NIVEL, CON EXPERIENCIA Y CONOCIMIENTO A SU SERVICIO.<br><i>CADA MINUTO CUENTA</i></h6>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-inverse bg-sfc-tierra pt-0 pb-0 sticky-top" id="navbar_menu">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" id="logo" style="width: 60px; transition-duration: 0.3s;">
+            </a>
+            <div class="pt-1 pb-1 pl-2 pr-2">
+                <button class="navbar-toggler" id="btn_navbar" type="button" data-toggle="collapse" data-target="#menu_navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse h-100" id="menu_navbar">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item text-center pt-1 pb-1 pl-2 pr-2"><a href="javascript:;" class="nav-link" id="itm_inicio" onclick="doScroll('menu_inicio', this);">INICIO</a></li>
+                    <li class="nav-item text-center pt-1 pb-1 pl-2 pr-2"><a href="javascript:;" class="nav-link" id="itm_servicios" onclick="doScroll('menu_servicios', this);">SERVICIOS</a></li>
+                    <li class="nav-item text-center pt-1 pb-1 pl-2 pr-2"><a href="javascript:;" class="nav-link" id="itm_experiencia" onclick="doScroll('menu_experiencia', this);">EXPERIENCIA</a></li>
+                    <li class="nav-item text-center pt-1 pb-1 pl-2 pr-2"><a href="javascript:;" class="nav-link" id="itm_equipo" onclick="doScroll('menu_equipo', this);">EQUIPO</a></li>
+                    <li class="nav-item text-center pt-1 pb-1 pl-2 pr-2"><a href="javascript:;" class="nav-link" id="itm_ubicacion" onclick="doScroll('menu_ubicacion', this);">UBICACIÓN</a></li>
+                    <li class="nav-item text-center pt-1 pb-1 pl-2 pr-2"><a href="javascript:;" class="nav-link" id="itm_contacto" onclick="doScroll('menu_contacto', this);">CONTACTO</a></li>
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <p class="navbar-text pt-1 pb-1 pl-2 pr-2 mt-auto mb-auto text-center" style="cursor: default;">Bogotá D.C</p>
+                </div>
+            </div>
+        </nav>
+        <div class="progress" id="progress_bar">
+            <div class="progress-bar bg-sfc-tierra" role="progressbar" data-valuenow="0" data-valuemin="0" data-valuemax="100"></div>
+        </div>
+        <!-- Boton hacia arriba -->
+        <a class="ir-arriba" href="javascript:;" title="Subir">
+            <span class="fas fa-stack">
+                <i class="fas fa-circle fa-stack-2x text-sfc-tierra"></i>
+                <i class="fas fa-arrow-up fa-stack-1x fa-inverse text-sfc-cafe"></i>
+            </span>
+        </a>
+        <div class="container mb-5">
+            <br><br>
+            <div class="row justify-content-center" id="menu_resultados_problemas">
+                <div class="col-md-6 pt-3" id="menu_problemas">
+                    <h6 class="font-weight-bold text-center mb-3">¿IDENTIFICA ALGUNO DE ESTOS PROBLEMAS?</h6>
+                    <button type="button" class="btn bg-sfc-tierra text-sfc-cafe font-weight-bold w-100 mt-auto" id="btn_solucionelos" onclick="doScroll('menu_servicios', '#itm_servicios');">¡SOLUCIÓNELOS!</button>
+                    <div id="carousel_problemas" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators bg-sfc-tierra" style="top: 100%; height: 20px; margin-right: 0%; margin-left: 0%;">
+                            <li data-target="#carousel_problemas" data-slide-to="0" class="active bg-sfc-cafe"></li>
+                            <li data-target="#carousel_problemas" data-slide-to="1" class="bg-sfc-cafe"></li>
+                            <li data-target="#carousel_problemas" data-slide-to="2" class="bg-sfc-cafe"></li>
+                            <li data-target="#carousel_problemas" data-slide-to="3" class="bg-sfc-cafe"></li>
+                            <li data-target="#carousel_problemas" data-slide-to="4" class="bg-sfc-cafe"></li>
+                            <li data-target="#carousel_problemas" data-slide-to="5" class="bg-sfc-cafe"></li>
+                            <li data-target="#carousel_problemas" data-slide-to="6" class="bg-sfc-cafe"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="text-justify pl-3 pr-3 pt-2 pb-2">Tipo de contratación solo con EPS, EPS-s, ARL, etc..., los cuales NO generan un flujo de caja suficiente para el mantenimiento y operación de la misma, problemas de liquidex e incremento de costos.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text-justify pl-3 pr-3 pt-2 pb-2">La incorrecta rotación de camas, asignación del tiempo y de las sesiones entre los servicios quirúrgicos, las ineficiencias en el proceso de programación de las intervenciones y la falta de procedimientos y criterios estandarizados provoca:</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text-justify pl-3 pr-3 pt-2 pb-2">retrasos, pérdidas de tiempo y cancelaciones evitables, lo que se traduce en una tasa de ocupación baja, y una tasa de ocupación baja revierte en un coste de oportunidad importante, tanto socual como económico.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text-justify pl-3 pr-3 pt-2 pb-2">La falta de comunicación y engranaje entre el personal administrativo y el asistencial, generando SUBFACTURACIÓN de servicios.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text-justify pl-3 pr-3 pt-2 pb-2">Cartera sin conciliar por falta de gestión de la glosa y conciliación de la misma.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text-justify pl-3 pr-3 pt-2 pb-2">Generación de gastos y costos que NO compensan con los ingresos y facturación de los servicios prestados.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text-justify pl-3 pr-3 pt-2 pb-2">Recepción de pacientes limitada por varios factores tales como la falta de oportunidad en la aceptación por parte administrativa y asistencial de la IPS, no disponibilidad de camas, etc...</p>
+                            </div>
+                        </div>
+                        <!-- <a class="carousel-control-prev" style="width: 20px;" href="#carousel_problemas" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" style="width: 20px;" href="#carousel_problemas" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-md-6 pt-3" id="menu_resultados">
+                    <h6 class="font-weight-bold text-center mb-3">RESULTADOS</h6>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-check text-sfc-tierra"></i></span>Incremento de ingreso de facturación por periodo mensual.</li>
+                        <li><span class="fa-li"><i class="fas fa-check text-sfc-tierra"></i></span>Disminución de glosa generada en el ciclo de facturación.</li>
+                        <li><span class="fa-li"><i class="fas fa-check text-sfc-tierra"></i></span>Articulación procesos medico asistencial vs administrativo.</li>
+                        <li><span class="fa-li"><i class="fas fa-check text-sfc-tierra"></i></span>Recuperación de cartera a corto plazo.</li>
+                        <li><span class="fa-li"><i class="fas fa-check text-sfc-tierra"></i></span>Implementación eficaz y productiva de modelo de atención SOAT.</li>
+                        <li><span class="fa-li"><i class="fas fa-check text-sfc-tierra"></i></span>Capacitación y estandarización de los procesos adquiridos por la compañía.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center menu_elem" id="menu_inicio">
+                <div class="col-md-12">
+                    <!-- <h6 class="font-weight-bold text-center">INICIO</h6> -->
+                    <div class="row">
+                        <div class="col-md-5 pt-3">
+                            <h6 class="font-weight-bold font-italic">¿Quiénes somos?</h6>
+                            <p class="text-justify">SFC Consultores en salud S.A.S es una empresa especialista en brindar a sus clientes una consultoría en las áreas Administrativa, Financiera y comercial involucradas en los procesos del campo de la salud, la cual ofrece una opinión objetiva, libre y honesta sobre el desarrollo, crecimiento y operación de una compañía o aliado estratégico.</p>
+                        </div>
+                        <div class="col-md-7 pt-3">
+                            <h6 class="font-weight-bold font-italic">Misión</h6>
+                            <p class="text-justify">Aportar un valor agregado, conocimiento y experiencia a las empresas colocando sobre la mesa reflexiones e ideas a largo plazo sobre el manejo administrativo, financiero y comercial de su compañía, al tener una visión mayor sobre los errores y aciertos que se evidencien en la operación de la misma. Ya que las empresas se encuentran claramente enfocadas en sus propios objetivos y labores, por lo tanto, tener esta visión ampliada por parte de SFC CONSULTORES EN SALUD S.A.S marcara una gran diferencia entregando éxito y crecimiento exponencial a sus clientes.</p>
+                        </div>
+                        <div class="col-md-8 pt-3">
+                            <h6 class="font-weight-bold font-italic">Valores corporativos</h6>
+                            <p class="text-justify">El valor más importante  de  SFC CONSULTORES EN SALUD S.A.S es el criterio de análisis que proporciona con una perspectiva objetiva e imparcial, pero sobre todo las distintas miradas que arroja sobre un mismo asunto, con uno de sus pilares de éxito en su recurso humano, organizado y sustentado para poder apoyar a las empresas con su aporte, no solo se trata de personas que  están preparadas profesionalmente, sino de personas con experiencia en negocios, que han trabajado con varias empresas y proyectos enriqueciendo su punto de vista. SFC CONSULTORES EN SALUD S.A.S además de lo mencionado anteriormente cuenta con valores corporativos tales como:</p>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center" id="items_valores">
+                            <div class="row w-100">
+                                <div class="col-md-12 d-none">
+                                    <div class="w-50 float-left">
+                                        <ul class="fa-ul">
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Atención personalizada</li>
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Transparencia</li>
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Liderazgo</li>
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Calidad</li>
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Innovación</li>
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Compromiso</li>
+                                        </ul>
+                                    </div>
+                                    <div class="w-50 float-left">
+                                        <ul class="fa-ul">
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Trabajo en equipo</li>
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Identidad institucional
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Respeto</li>
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Ética</li>
+                                            <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Equidad</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Atención personalizada</li>
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Transparencia</li>
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Liderazgo</li>
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Calidad</li>
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Innovación</li>
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Compromiso</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Trabajo en equipo</li>
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Identidad institucional</li>
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Respeto</li>
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Ética</li>
+                                        <li><span class="fa-li"><i class="fas fa-thumbtack rotate-45 text-sfc-tierra"></i></span>Equidad</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center menu_elem" id="menu_servicios">
+                <div class="col-md-12 pt-3">
+                    <h6 class="font-weight-bold text-center mb-3">SERVICIOS</h6>
+                    <div class="row pl-2">
+                        <div class="col-md-4 pr-5">
+                            <h6 class="font-weight-bold">Outsourcing</h6>
+                            <p class="list-snake">Cuentas médicas</p>
+                            <p class="list-snake">Implementación modelo SOAT</p>
+                        </div>
+                        <div class="col-md-4 pr-5">
+                            <h6 class="font-weight-bold">Asesoría</h6>
+                            <p class="list-snake">Contratación EPS por capitas, paquetes, techos presupuestales etc.</p>
+                            <p class="list-snake">Cuentas médicas</p>
+                            <p class="list-snake">Modelo de atención SOAT</p>
+                        </div>
+                        <div class="col-md-4 pr-5">
+                            <h6 class="font-weight-bold">Auditoría</h6>
+                            <p class="list-snake">Problemas de glosa y cartera</p>
+                            <p class="list-snake">Cuentas médicas</p>
+                            <p class="list-snake">Modelo de atención SOAT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center menu_elem" id="menu_experiencia">
+                <div class="col-md-12 pt-3">
+                    <h6 class="font-weight-bold text-center mb-3">EXPERIENCIA</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="fa-ul">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-clinic-medical text-sfc-tierra"></i></span><b>MEDICAL PRO INFO</b>
+                                    <p class="text-justify">
+                                        Manejo y capacitación de todos los procesos involucrados en el área de cuentas médicas tales como Facturación, referencia y contrarreferencia, glosas, cartera, auditoría.<br>
+                                        Manejo e implementación de modelos de atención SOAT.<br>
+                                        Conciliación de cuentas médicas.
+                                    </p>
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-clinic-medical text-sfc-tierra"></i></span><b>FARMACIA SANARTE</b>
+                                        <p class="text-justify">
+                                            Asesoría y auditoria en los procesos involucrados en el área de cuentas médicas.
+                                        </p>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="fa-ul">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-clinic-medical text-sfc-tierra"></i></span><b>JARBSALUD IPS</b>
+                                    <p class="text-justify">
+                                        Manejo y capacitación de todos los procesos involucrados en el área de cuentas médicas tales como Facturación, referencia y contrarreferencia, glosas, cartera, auditoria.<br>
+                                        Manejo e implementación de modelos de atención SOAT.<br>
+                                        Conciliación de cuentas médicas.
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-clinic-medical text-sfc-tierra"></i></span><b>CENTRO HOSPITALARIO DEL META</b>
+                                    <p class="text-justify">
+                                        Manejo completo y tercerización de todos los procesos involucrados en el modelo de atención SOAT.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 menu_elem pt-3" id="menu_equipo">
+                    <h6 class="font-weight-bold text-center mb-3">EQUIPO DE TRABAJO</h6>
+                    <div id="carousel_equipo_trabajo" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#carousel_equipo_trabajo" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel_equipo_trabajo" data-slide-to="1"></li>
+                            <li data-target="#carousel_equipo_trabajo" data-slide-to="2"></li>
+                            <li data-target="#carousel_equipo_trabajo" data-slide-to="3"></li>
+                            <li data-target="#carousel_equipo_trabajo" data-slide-to="4"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/carousel/equipo-administrativo.png" alt="Líder administrativo">
+                                <div class="carousel-caption text-white bg-sfc-tierra-transparent font-weight-bold">
+                                    <h3>Líder administrativo</h3>
+                                    <p>Equipo de cuentas médicas</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel/equipo-financiero.jpg" alt="Líder financiero">
+                                <div class="carousel-caption text-white bg-sfc-tierra-transparent font-weight-bold">
+                                    <h3>Líder financiero</h3>
+                                    <p>Equipo de cartera</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel/equipo-comercial.jpg" alt="Líder comercial">
+                                <div class="carousel-caption text-white bg-sfc-tierra-transparent font-weight-bold">
+                                    <h3>Líder comercial</h3>
+                                    <p>Equipo de marketing y ventas</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel/equipo-contable.jpg" alt="Asesoría contable">
+                                <div class="carousel-caption text-white bg-sfc-tierra-transparent font-weight-bold">
+                                    <h3>Asesoría contable</h3>
+                                    <!-- <p></p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel/equipo-programación.jpg" alt="Asesoría de programación">
+                                <div class="carousel-caption text-white bg-sfc-tierra-transparent font-weight-bold">
+                                    <h3>Asesoría de programación</h3>
+                                    <!-- <p></p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel_equipo_trabajo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel_equipo_trabajo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center menu_elem pt-3" id="menu_ubicacion">
+                    <h6 class="font-weight-bold mb-3">UBICACIÓN</h6>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d703.0481402699985!2d-74.09816578538957!3d4.586689213445632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f98e0330bfcd3%3A0x35f55a41e88aae0f!2sTv.%2018%20bis%20%2313-36%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1603280433801!5m2!1ses-419!2sco" width="100%" height="80%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <label style="width: 100%;"><span class="fas fa-map-marker-alt icon_menu"></span> Transversal 18 Bis No. 13-36 Sur. Bogotá D.C, Colombia. Frente del CAI RESTREPO.</label>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer font-small indigo">
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="javascript:;" onclick="doScroll('menu_inicio', '#itm_inicio');">Inicio</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="javascript:;" onclick="doScroll('menu_servicios', '#itm_servicios');">Servicios</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="javascript:;" onclick="doScroll('menu_experiencia', '#itm_experiencia');">Experiencia</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="javascript:;" onclick="doScroll('menu_equipo', '#itm_equipo');">Equipo</a>
+                        </h6>
+                    </div>
+                </div>
+                <hr class="rgba-white-light" style="width: 60%; margin: 0 auto;">
+                <div class="row d-flex justify-content-center mb-md-0">
+                    <div class="col-md-5 mt-5 menu_elem" id="menu_contacto">
+                        <h6 class="font-weight-bold text-center mb-3">CONTACTO</h6>
+                        <ul style="line-height: 1.7rem; list-style-type: none;">
+                            <li><span class="fas fa-map-marker-alt icon_menu"></span> Transversal 18 Bis No. 13-36 Sur.</li>
+                            <li><span class="fas fa-building icon_menu"></span> Bogotá D.C, Colombia.</li>
+                            <li><span class="fas fa-phone icon_menu"></span> 3114741838 - 3164964198</li>
+                            <li><span class="fas fa-at icon_menu"></span> <a href="mailto:sfcsalud10@gmail.com">sfcsalud10@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <hr class="rgba-white-light mt-5" style="margin: 0 0;"> -->
+                <div class="row pb-3 text-center justify-content-center">
+                    <div class="col-md-12">
+                        <div class="mt-5 mb-5">
+                            <a class="fb-ic">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                            </a>
+                            <a class="tw-ic">
+                                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                            </a>
+                            <a class="li-ic">
+                                <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                            </a>
+                            <a class="ins-ic">
+                                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3 pl-2 pr-2 bg-sfc-cafe text-sfc-tierra">SFC CONSULTORES EN SALUD S.A.S powered by <b>Neftcode ©</b></a>
+            </div>
+        </footer>
+        <hr id="final_contenido">
+    </div>
+    <!-- Script -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/console.js"></script>
+    <script type="text/javascript" src="js/functions_index.js"></script>
+    <!-- End Script -->
+</body>
+</html>
